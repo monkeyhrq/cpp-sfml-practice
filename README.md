@@ -52,16 +52,20 @@
 
 ---
 
-### 4. TetrisGame — 俄羅斯方塊
+### 4. Weather — 台中天氣查詢
 
-使用 C++ 與 SFML 製作的俄羅斯方塊遊戲，支援方塊移動、旋轉與消行。
+串接 [Open-Meteo API](https://open-meteo.com/) 取得台中即時天氣與 7 天預報。
 
-![demo](TetrisGame/demo.gif)
+![demo](Weather/demo.png)
 
 **功能：**
-- 方向鍵左右移動、下加速、上旋轉
-- 填滿一行自動消除
-- 目前支援 O 型與 I 型方塊
+- 即時氣溫、濕度、風速
+- 未來 7 天高低溫、降雨機率、天氣狀態
+
+**使用技術：**
+- SFML（圖形介面）
+- cpp-httplib（HTTP 請求）
+- nlohmann/json（JSON 解析）
 
 ---
 
