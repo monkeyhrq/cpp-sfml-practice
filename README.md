@@ -52,6 +52,19 @@
 
 ---
 
+### 4. TetrisGame — 俄羅斯方塊
+
+使用 C++ 與 SFML 製作的俄羅斯方塊遊戲，支援方塊移動、旋轉與消行。
+
+![demo](TetrisGame/demo.gif)
+
+**功能：**
+- 方向鍵左右移動、下加速、上旋轉
+- 填滿一行自動消除
+- 目前支援 O 型與 I 型方塊
+
+---
+
 ## 如何執行
 
 1. 安裝 SFML 2.x（建議透過 [vcpkg](https://github.com/microsoft/vcpkg)）

@@ -9,14 +9,15 @@ int main() {
 	sf::Sprite backgroundSprite(backgroundTexture);
 	backgroundSprite.setPosition(0, 40);
 	sf::VideoMode mode(642, 600);
-	sf::RenderWindow window(mode, L"�p�e�a");
+	
+	sf::RenderWindow window(mode, L"小畫家");
 
-	//�e��
+	// 畫筆
 	sf::CircleShape cursor(10);
 	cursor.setFillColor(sf::Color::Black);
 	cursor.setOrigin(10, 10);
 
-	//�e��
+	// 畫布
 	sf::RenderTexture canvas;
 	canvas.create(600, 560);
 	canvas.clear(sf::Color::White);
@@ -24,7 +25,7 @@ int main() {
 	sf::Vector2f canvasOffset(20, 60);
 	canvasSprite.setPosition(canvasOffset);
 
-	//�զ�L
+	// 調色盤
 	std::vector<sf::Color> colors = {
 		sf::Color::White,
 		sf::Color::Black,
@@ -70,7 +71,7 @@ int main() {
 		}
 		sf::Vector2i mousePos = sf::Mouse::getPosition(window);
 
-		//�e���e���y��
+		// 計算畫筆在畫布上的座標
 		if (sf::Mouse::isButtonPressed(sf::Mouse::Left)) {
 			cursor.setPosition(sf::Vector2f(mousePos) - canvasOffset);
 			canvas.draw(cursor);
@@ -78,15 +79,15 @@ int main() {
 		}
 
 		window.clear(sf::Color::White);
-		//�I��
+		// 背景
 		window.draw(backgroundSprite);
-		//�զ�L
+		// 調色盤
 		for (const auto swatch : swatches) {
 			window.draw(swatch);
 		}
-		//�e��
+		// 畫布
 		window.draw(canvasSprite);
-		//�e��
+		// 畫筆
 		cursor.setPosition(sf::Vector2f(mousePos));
 		window.draw(cursor);
 		window.display();
