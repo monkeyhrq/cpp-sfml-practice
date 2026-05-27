@@ -1,0 +1,29 @@
+# Visual Studio 編譯產出
+Debug/
+Release/
+x64/
+x86/
+*.obj
+*.exe
+*.pdb
+*.ilk
+*.idb
+*.ipdb
+*.iobj
+*.log
+*.tlog
+*.recipe
+
+# Visual Studio 本機設定
+.vs/
+*.user
+*.suo
+*.aps
+
+# DLL（由 SFML/vcpkg 提供，不需進版控）
+*.dll
+
+# 其他
+*.ncb
+*.sdf
+*.opensdf
