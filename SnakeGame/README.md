@@ -2,9 +2,9 @@
 
 使用 C++ 與 SFML 製作的經典貪吃蛇遊戲。
 
-## 示範影片
+## 示範
 
-https://github.com/monkeyhrq/cpp-sfml-practice/blob/main/SnakeGame/貪吃蛇%20.mp4
+![demo](demo.gif)
 
 ## 技術
 
